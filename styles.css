@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+body {
+    background-color: #000000; /* Light gray color, adjust as needed */
+    color: white;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* <!-- ===================================NAV=================================================== --> */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+    height: 55px;
+
+margin-top: 10px;
+}
+.name {
+   margin-left: 55px;
+    font-size: xx-large;
+    width: auto;
+    font-weight: 800;
+}
+.name2 {
+    margin-left: 55px;
+     font-size: xx-large;
+     width: auto;
+     font-weight: 800;
+     color: black;
+ }
+.about {
+   width: auto;
+}
+.links {
+    display: flex;
+    margin-left: auto; /* Push the links to the right */
+    color: rgb(117, 117, 117);
+    margin-right: auto;
+    justify-content: center;
+}
+
+.nav a {
+    margin-right: 20px; /* Adjust the margin as needed for spacing between links */
+    text-decoration: none;
+    color: white; /* Set link color */
+}
+.links a {
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.links a:hover {
+    color: white; /* Change the color on hover to white, adjust as needed */
+}
+
+
+
+/* <!-- ===================================LANDING=================================================== --> */
+
+.containers {
+    display: flex;
+    height: 80%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smoother color and size change */
+}
+
+.container:hover {
+    background-color: #303030;
+    transform: scale(1.05); /* Scale up by 5% on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.title {
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    font-size: 20px;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.text {
+    position: absolute;
+    font-size: normal;
+    bottom: 60px;
+    left: 10px;
+    color: white;
+}
+
+.visit {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(117, 117, 117);
+    transition: color 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: normal;
+}
+
+.visit:hover {
+    color: white;
+}
+
+.visit svg {
+    margin-left: 6px;
+    width: 16px;
+    height: 16px;
+}
+/* <!-- ===================================ABOUT=================================================== --> */
+.back-arrow{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid rgb(117, 117, 117);
+    border-radius: 50px;
+}
+
+.back-arrow a {
+    text-decoration: none;
+    color: rgb(117, 117, 117); /* Adjust the color as needed */
+    transition: color 0.8s ease;
+}
+.back-arrow:hover {
+    background-color: rgb(173, 173, 173); /* Set light gray background on hover */
+    border-color: white; /* Change border color to white on hover */
+    transition: color 0.8s ease;
+}
+
+.back-arrow:hover svg {
+    stroke: white; /* Change the arrow color to white on hover */
+    transition: stroke 1.2s;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* You can adjust this based on your needs */
+}
+
+.aboutText {
+    width: 50%;
+    text-align: left; /* Align the text inside .aboutText to the left */
+    font-size: x-large;
+    color: rgb(117, 117, 117);
+}
+.highlight-word:hover,
+        .highlight-word.hovered {
+            color: white;
+            cursor: pointer;
+        }
+
+        .random-word:hover,
+        .random-word.hovered {
+            color: rgb(163, 230, 163);
+            cursor: pointer;
+        }
+
+/* <!-- ===================================MEDIA=================================================== --> */
+
+
+@media (min-width: 1441px) {
+    .containers {
+        padding-left: 220px; /* Adjust the left padding as needed */
+        padding-right: 220px; /* Adjust the right padding as needed */
+    }
+}
+
+
+/* <!-- ===================================MOBILE MENU=================================================== --> */
+@media (min-width: 429px) {
+    .MobileNav{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 440px) {
+    body {
+        width: 340px;
+        margin: 0 auto; /* Center the content */
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .containers {
+        width: 100%; /* Full width */
+        padding: 0;
+    }
+
+    .container {
+        height: 400px;
+        width: 100%;
+        margin: 15px 0; /* Add some margin between containers */
+        box-sizing: border-box; /* Include padding and border in total width/height */
+    }
+
+    .MNavName {
+        margin-left: 15px; /* Adjust as needed */
+        font-size: xx-large;
+        width: auto;
+        font-weight: 800;
+    }
+
+    .MobileNav {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: large;
+        height: 55px;
+    }
+
+    .menu {
+        margin-left: 180px; /* Adjust as needed */
+    }
+}
