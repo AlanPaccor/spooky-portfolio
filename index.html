@@ -2,6 +2,7 @@
 <head>
     <link rel="restsheet" href="reset.css">
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="/contents/spook/pfp.jpeg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpookyBear</title>
     <link rel="stylesheet" href="styles.css">
@@ -16,13 +17,13 @@
             <a class="about" href="about.html">
                 About
             </a>
-            <a class="twitter" href="/">
+            <a class="twitter" href="https://twitter.com/Bear0Spooky" target="_blank">
                 Twitter
             </a>
-            <a class="GitHub" href="/">
+            <a class="GitHub" href="https://github.com/SpookyBear0" target="_blank">
                 GitHub
             </a>
-            <a class="YouTube" href="/">
+            <a class="YouTube" href="https://www.youtube.com/channel/UCQNl8ru98ixrwRVSbtvNfXw" target="_blank">
                 YouTube
             </a>
         </div>
@@ -31,7 +32,7 @@
         </p>
         
     </nav>
-    <nav class="Mobilenav">
+    <nav class="Mobilenav" id="MobileMenu">
         <p class="MNavName">
             Spook
         </p>
@@ -40,11 +41,30 @@
                 <path d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z" fill="white"/>
             </svg>
         </div>
+        <div class="menuDropdown">
+            <a class="Mabout" href="about.html">
+                About
+            </a>
+            <a class="Mtwitter" href="https://twitter.com/Bear0Spooky">
+                Twitter
+            </a>
+            <a class="Mgithub" href="https://github.com/SpookyBear0">
+                GitHub
+            </a>
+            <a class="Myoutube" href="https://www.youtube.com/channel/UCQNl8ru98ixrwRVSbtvNfXw">
+                YouTube
+            </a>
+            <a class="close" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </a>
+        </div>
         <p class="name2">
             space
         </p>
-        
     </nav>
+    
 <!-- ===================================LANDING=================================================== -->
 <div class="containers">
     <div class="container">
@@ -55,7 +75,7 @@
         <p class="text">
             Lotus is a project that acts as an overall stats leaderboard for Geometry Dash.
         </p>
-        <a class="visit" href="/">
+        <a class="visit" href="https://github.com/lotus-gd">
             Visit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -65,12 +85,12 @@
     <div class="container">
         <img src="/contents/spook/osu-modified.png" alt="Lotus Image">
         <p class="title">
-            Lotus
+            Spookybot
         </p>
         <p class="text">
-            Lotus is a project that acts as an overall stats leaderboard for Geometry Dash.
+            Spookybot is a general-use chatbot for osu!.
         </p>
-        <a class="visit" href="/">
+        <a class="visit" href="https://github.com/spookybear0/spookybot">
             Visit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -79,13 +99,13 @@
 
     <div class="container">
         <img src="/contents/spook/geometry-modified.png" alt="Lotus Image">
-        <p class="title">
-            Lotus
+        <p class="title" id="gdAddresses">
+            GD-Addresses
         </p>
         <p class="text">
-            Lotus is a project that acts as an overall stats leaderboard for Geometry Dash.
+            A public repository with addresses for modding Geometry Dash
         </p>
-        <a class="visit" href="/">
+        <a class="visit" href="https://github.com/spookybear0/gd-addresses">
             Visit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -93,7 +113,12 @@
     </div>
     
 </div>
+<div class="bottom">
+    <p class="reserved">
+        © 2024 Spook. All rights reserved.
+    </p>
+</div>
 
-    <script src="java.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>

@@ -39,3 +39,11 @@ function wrapWordsWithSpan(elementId) {
         });
     });
 }
+document.addEventListener('DOMContentLoaded', function () {
+    var secretText = document.querySelector('.secretText');
+    var words = secretText.innerText.split(/\s+/);
+
+    secretText.innerHTML = words.map(function (word) {
+        return `<a class="secretHover" href="#">${word}</a>`;
+    }).join(' ');
+});
